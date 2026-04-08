@@ -3,14 +3,14 @@ Lab 6
 /****************************************************************************
 * Número aproximado de horas para completar esta tarea
 ******************************************************************************/
-Número de horas:
+Número de horas: 4 horas
 
 
 /****************************************************************************
 * ¿Encontraste algún problema serio? Si es así, por favor descríbelo.
 ******************************************************************************/
 
-¿Sí o no?
+¿Sí o no? no 
 
 
 /****************************************************************************
@@ -22,7 +22,7 @@ Número de horas:
 /****************************************************************************
  *  Proporciona el enlace de tu perfil de GitHub (ej. https://github.com/afbeltranp)
  ******************************************************************************/
-
+https://github.com/intro-prog-unisabana/lab6-tom-182008-1
 [escribe el enlace aquí]
 
 /****************************************************************************
@@ -35,3 +35,5 @@ Número de horas:
  ******************************************************************************/
 
 [escribe y firma la declaración aquí]
+Esta tarea de programación representa mi propio trabajo de acuerdo con las regulaciones de la Universidad. 
+/s/ Tomas Rodriguez Urrego
