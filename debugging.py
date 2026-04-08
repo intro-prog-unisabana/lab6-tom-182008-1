@@ -7,21 +7,25 @@ def show_inventory(inventory):
 
 def add_fruit(inventory):
     fruit = input("Enter the name of the new fruit: ").strip()
-    if fruit in inventory:
+    if fruit in inventory: # Simplificado: no necesitas .keys()
         print(f"{fruit} already exists!\n")
     else:
-        stock = input(f"Enter stock for {fruit}: ")
-        # 1. Aseguramos que se guarde como entero
-        inventory[fruit] = int(stock)
-        # 2. Formato exacto: nombre + " added with stock " + número + "."
+        stock_input = input(f"Enter stock for {fruit}: ")
+        # Convertimos a entero para que se guarde como número
+        stock = int(stock_input)
+        inventory[fruit] = stock
+        # El punto debe estar pegado a la llave y seguido de \n
         print(f"{fruit} added with stock {stock}.\n")
 
 def update_stock(inventory):
     fruit = input("Enter the name of the fruit to update: ").strip()
+    
+    # ERROR CRÍTICO ANTERIOR: Aquí tenías inventory.items()
+    # Para buscar una llave, se usa 'if fruit in inventory'
     if fruit in inventory:
-        amount = input(f"Enter amount to add to {fruit}'s stock: ")
-        # 3. Suma matemática (no concatenación de texto)
-        inventory[fruit] += int(amount)
+        amount_input = input(f"Enter amount to add to {fruit}'s stock: ")
+        amount = int(amount_input)
+        inventory[fruit] += amount
         print(f"{fruit} stock increased by {amount}.\n")
     else:
         print(f"{fruit} is not in inventory. Use option 2 to add it.\n")
