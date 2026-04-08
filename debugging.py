@@ -1,7 +1,7 @@
 def show_inventory(inventory):
     print("\nCurrent Inventory:")
     # ¿Es esta la forma correcta de iterar sobre el diccionario?
-    for fruit, stock in inventory:
+    for fruit, stock in inventory.items():
         print(f"{fruit}: {stock}")
     print()
 
@@ -12,7 +12,7 @@ def add_fruit(inventory):
     else:
         stock = input(f"Enter stock for {fruit}: ")
         # Algo está mal con la sintaxis aquí...
-        inventory[fruit] == int(stock)
+        inventory[fruit] = int(stock)
         print(f"{fruit} added with stock {stock}.\n")
 
 def update_stock(inventory):
