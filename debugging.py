@@ -17,13 +17,13 @@ def add_fruit(inventory):
 
 def update_stock(inventory):
     fruit = input("Enter the name of the fruit to update: ").strip()
-    # ¿Es esta la forma correcta de iterar sobre el diccionario?
-    if fruit in inventory.items():
-        amount_input = input(f"Enter amount to add to {fruit}'s stock: ")
-        amount = int(amount_input)
-        # ¿Es esta operación válida?
+    if fruit in inventory:
+        # El input primero, luego el int
+        amount_text = input(f"Enter amount to add to {fruit}'s stock: ")
+        amount = int(amount_text)
         inventory[fruit] += amount
-        print(f"{fruit} stock increased by {amount}.\n")
+        print(f"{fruit} stock increased by {amount}.")
+        print()
     else:
         print(f"{fruit} is not in inventory. Use option 2 to add it.\n")
 
