@@ -23,7 +23,6 @@ Número de horas: 4 horas
  *  Proporciona el enlace de tu perfil de GitHub (ej. https://github.com/afbeltranp)
  ******************************************************************************/
 https://github.com/intro-prog-unisabana/lab6-tom-182008-1
-[escribe el enlace aquí]
 
 /****************************************************************************
  *  Escribe y firma el siguiente reconocimiento estudiantil de trabajo original.
@@ -34,6 +33,5 @@ https://github.com/intro-prog-unisabana/lab6-tom-182008-1
  *      con las regulaciones de la Universidad.  /s/ Ada Lovelace
  ******************************************************************************/
 
-[escribe y firma la declaración aquí]
 Esta tarea de programación representa mi propio trabajo de acuerdo con las regulaciones de la Universidad. 
 /s/ Tomas Rodriguez Urrego
